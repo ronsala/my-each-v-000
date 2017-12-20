@@ -1,12 +1,11 @@
-def my_each(words)
-  i = 1
+def my_each(ary)
+  i = 0
 
-  while i <= words.length
-    yield words[i]
+  while i < ary.length
+    w = ary[i]
     i = i + 1
+    yield(w)
   end
-end
+  ary
 
-my_each(words[i]) do |i|
-    puts i
 end
